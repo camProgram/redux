@@ -5,15 +5,15 @@ import "./App.css";
 function CounterButton(props) {
 	return (
 		<div>
-			<button className="btn" onClick={() => props.onIncreaseClick}>
+			<button className="btn" onClick={() => props.onIncreaseClick()}>
 				Augmenter +1
 			</button>
 
-			<button className="btn" onClick={() => props.onDecreaseClick}>
+			<button className="btn" onClick={() => props.onDecreaseClick()}>
 				Diminuer -1
 			</button>
 
-			<button className="btn" onClick={() => props.onResetClick}>
+			<button className="btn" onClick={() => props.onResetClick()}>
 				Reset
 			</button>
 		</div>
